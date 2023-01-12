@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+*::after, *::before{
+    box-sizing: border-box;
+}
+html, body{
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: block;
+    padding: 2rem;
+    box-shadow:  0 0 4px #333;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-basis: 30%;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem 0.25rem;
+    color: #ccc;
+    transition: all 0.2s linear;
+    outline: none;
+    border: 2px solid #333;
+}
+
+input:focus{
+    outline: none;
+    color: #000;
+    border-color: green;
+    letter-spacing: 1px;
+}
+
+button{
+    display: block;
+    width: 50%;
+    padding: 0.5rem 2rem;
+    margin: 2rem auto;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #333;
+    border-radius: 4px;
+    transition: all 1s ease-in 1s;
+}
+
+button:hover{
+    box-shadow: 0 0 6px rgb(204, 66, 20);
+    background: #333;
+    color: #eee;
+}

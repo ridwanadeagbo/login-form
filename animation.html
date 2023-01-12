@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        body{
+            overflow-x: hidden;
+        }
+        .rect{
+            width: 5rem;
+            height: 5rem;
+            border: 1px solid grey;
+            animation-name: travel;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: travel 1s ease infinite alternate;
+        }
+
+        @keyframes travel {
+            from{
+                background: red;
+                /* border-width: 4px; */
+            }
+
+            to{
+                background: green;
+                border-style: dotted;
+                /* left: 100%; */
+                margin-left: 50rem;
+            }
+        }
+
+        .ball{
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            animation: bounce 3s linear infinite alternate;
+        }
+
+        @keyframes bounce {
+            0%{
+                bottom: 0;
+                left: 0;
+            }
+
+            10%{
+                bottom: 30%;
+                left: 10%;
+            }
+
+            20%{
+                bottom: 0%;
+                left: 20%;
+            }
+
+            30%{
+                bottom: 30%;
+                left: 30%;
+                background: blue;
+            }
+
+            40%{
+                bottom: 0%;
+                left: 40%;
+                border: 4px solid brown;
+                background: white;
+            }
+
+            50%{
+                bottom: 30%;
+                left: 50%
+            }
+
+            60%{
+                bottom: 0%;
+                left: 60%
+            }
+
+            70%{
+                bottom: 30%;
+                left: 70%
+            }
+
+            80%{
+                bottom: 0%;
+                left: 80%
+            }
+
+            90%{
+                bottom: 30%;
+                left: 90%
+            }
+
+            100%{
+                left: 100%;
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rect"></div>
+
+    <div class="ball"></div>
+</body>
+</html>
